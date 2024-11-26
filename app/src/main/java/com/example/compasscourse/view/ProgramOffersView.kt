@@ -152,7 +152,7 @@ fun FloatingButton(buttonData: FloatingButtonData, onClick: () -> Unit, modifier
         onClick = onClick,
         modifier = modifier
             .fillMaxWidth() // Each button takes full width of the column
-            .height(100.dp),
+            .height(300.dp),
         shape = RoundedCornerShape(12.dp),
         colors = ButtonDefaults.buttonColors(containerColor = buttonData.backgroundColor)
     ) {
@@ -190,7 +190,7 @@ fun DetailedProgramCard(program: FloatingButtonData, onBackClick: () -> Unit) {
             shape = RoundedCornerShape(16.dp),
             modifier = Modifier
                 .width(360.dp)
-                .height(1250.dp)
+                .height(350.dp)
                 .padding(16.dp),
             colors = CardDefaults.cardColors(containerColor = program.backgroundColor)
         ) {
@@ -232,6 +232,7 @@ fun DetailedProgramCard(program: FloatingButtonData, onBackClick: () -> Unit) {
                 )
                 Spacer(modifier = Modifier.height(24.dp))
                 Button(
+
                     onClick = onBackClick,
                     colors = ButtonDefaults.buttonColors(containerColor = Color.White)
                 ) {
